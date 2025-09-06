@@ -1,0 +1,20 @@
+\section{Conceitos Gerais} \label{sec:concepts}
+% A presente seção busca definir termos recorrentes neste trabalho, de forma a permitir melhor compreensão teórica dos elementos inerentes à hipoxemia e aos sistemas especialistas.
+A hipoxemia é definida como a redução do conteúdo arterial de oxigênio (CaO$_2$); sendo medida com base na pressão parcial de O$_2$ no sangue arterial (PaO$_2$) \cite{fortis2000hipoxemia}. A saturação fracional da hemoglobina pode ser obtida de maneira invasiva, por meio de exame de sangue arterial, ou de forma não invasiva, com o uso do oxímetro \cite{collins2015relating}. Este último fornece uma medida chamada SpO$_2$, que difere menos de 2\% do valor obtido por métodos invasivos como o exame de sangue, conforme explica Collins et al. (2015) \cite{collins2015relating}.
+
+O oxímetro é um equipamento útil para diagnósticos iniciais da deficiência de oxigenação arterial. É considerado confortável para o paciente e oferece resultados imediatos, com monitoramento contínuo. No entanto, o dispositivo ainda carece de autonomia operacional, sendo dependente de um operador especializado. Também não possui mecanismos de interpretação ou acompanhamento ativo do estado do paciente, limitando-se a fornecer medidas contínuas que podem não ter significado direto para usuários leigos.
+
+Nesse contexto, surgem alternativas baseadas na Internet das Coisas (IoT), que permitem conectar dispositivos médicos à rede. Trabalhos como os de Bhuyan e Sheik (2021) \cite{bhuyan2021designing}, Hidayat et al. (2020) \cite{hidayat2020designing} e 
+Ganesh et al. (2022) \cite{ganesh2022iot} já exploram essa abordagem, mas com enfoque na construção do microcontrolador oxímetro e sua conectividade. O presente trabalho, no entanto, busca também conferir autonomia operacional ao equipamento por meio de Sistemas Multiagentes (SMA, do inglês \textit{Multi-Agent System}). 
+
+Cardoso e Fernando (2021) \cite{cardoso2021review} explicam que agentes são entidades computadorizadas capazes de raciocinar, tomar decisões de forma independente, colaborar com outros agentes quando necessário e perceber o contexto em que estão inseridas e reagir a ele. Por fim, agentes tomam iniciativa para concluir objetivos, sendo, portanto, proativos.
+
+A construção de SMAs se dá, como em qualquer outro software, por meio de algoritmos escritos em texto, que posteriormente são interpretados ou compilados pelo computador. Para tornar esse processo mais ágil, foram criados os \textit{Integrated Development Environments} (IDEs), que funcionam analogamente a uma ponte entre o desenvolvedor e o computador. No entanto, IDEs tradicionais ainda não oferecem suporte integral ao ferramental necessário para a construção de SMAs \cite{siqueira2024analise}. O \textit{Cognitive Hardware on Network – Integrated Development Environment} (ChonIDE) é uma plataforma web de código aberto que se destaca justamente por fornecer esse suporte especializado \cite{wesaac}. O paradigma \textit{Agent-Oriented Programming Language} (AOPL) é utilizado na camada lógica da construção dos SMAs, por meio da linguagem de programação AgentSpeak \cite{pantoja2016argo}. O interpretador Jason permite a execução de AgentSpeak sobre a linguagem Java, uma das mais populares para o tema de pesquisa. A ChonIDE utiliza Jason para estabelecer a comunicação entre os agentes e os microcontroladores, com o auxílio do \textit{middleware} Javino \cite{lazarin2015robotic}. A arquitetura ARGO, baseada em Jason \cite{pantoja2016argo}, também está disponível na ChonIDE e permite separar o desenvolvimento de SMAs em duas camadas: uma dedicada ao \textit{hardware} e outra à lógica de raciocínio (\textit{reasoning layer}) \cite{pantoja2016argo}, permitindo assim o desenvolvimento de agentes por meio de camadas de responsabilidades bem definidas.
+
+
+
+%<OPCIONAL>OXIGENOTERAPIA
+
+
+
+
